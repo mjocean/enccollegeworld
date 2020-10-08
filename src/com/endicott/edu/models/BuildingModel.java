@@ -236,4 +236,7 @@ public class BuildingModel implements Serializable {
     public ArrayList<Upgrade> getUpgrades(){
         return this.upgrades;
     }
+    public void setUpgrades(ArrayList<Upgrade> upgrades){
+        this.upgrades = upgrades;
+    }
 }
