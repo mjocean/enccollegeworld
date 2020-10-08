@@ -4,11 +4,7 @@ public class AcademicCenterModel extends BuildingModel {
     //inherits from BuildingModel
     public AcademicCenterModel(String name, int numStudents, String size){
         super(name, numStudents, BuildingType.academic().getType(), size);
-        this.getUpgrades().add(new Upgrade("Tables",0, 0));
-        this.getUpgrades().add(new Upgrade("Air Conditioning", 0, 0));
-        this.getUpgrades().add(new Upgrade("Vending Machines", 0, 0));
-        this.getUpgrades().add(new Upgrade("Projectors", 0, 0));
-        this.getUpgrades().add(new Upgrade("Seats", 0, 0));
+        this.setUpgrades(AcademicCenterUpgrades.getUpgrades());
     }
 
     public void upgradeAcademicCenter(Upgrade upgrade) {
