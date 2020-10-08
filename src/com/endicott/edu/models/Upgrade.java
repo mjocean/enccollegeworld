@@ -9,7 +9,7 @@ public class Upgrade implements Serializable {
     protected int happinessModifier;
     protected int currentLevel;
     protected String description;
-    protected ArrayList<UpgradeEvents> events;
+    protected ArrayList<UpgradeEvent> events;
     protected int maxLevel;
     protected boolean isInteriorChange;
 
@@ -20,7 +20,7 @@ public class Upgrade implements Serializable {
         this.currentLevel = 0;
     }
 
-    public Upgrade(String name, int cost, int happinessModifier, String description, ArrayList<UpgradeEvents> events, int maxLevel, boolean typeOfChange){
+    public Upgrade(String name, int cost, int happinessModifier, String description, ArrayList<UpgradeEvent> events, int maxLevel, boolean isInteriorChange){
         this.name = name;
         this.cost = cost;
         this.happinessModifier = happinessModifier;
@@ -28,7 +28,7 @@ public class Upgrade implements Serializable {
         this.description = description;
         this.events = events;
         this.maxLevel = maxLevel;
-        this.isInteriorChange = typeOfChange;
+        this.isInteriorChange = isInteriorChange;
     }
 
     public String getName(){
