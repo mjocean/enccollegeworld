@@ -5,7 +5,9 @@ public class BaseballDiamondModel extends BuildingModel{
     public BaseballDiamondModel(String name, String size) {
         super(name, BuildingType.baseballDiamond().getType(), size);
         this.getUpgrades().add(new Upgrade("grassQuality",0, 0));
+//        this.getUpgrades().add(new Upgrade("grassQuality", 0, 0, "Upgraded the turf of the field!", UpgradeEvent.getTurfUpgrades(), 2, false));
         this.getUpgrades().add(new Upgrade("dirtQuality", 0, 0));
+//        this.getUpgrades().add(new Upgrade("grassQuality", 0, 0, "Upgraded the dirt of the field!", UpgradeEvent.getDirtUpgrades(), 2, false));
         this.getUpgrades().add(new Upgrade("baseQuality", 0, 0));
         this.getUpgrades().add(new Upgrade("seatQuality", 0, 0));
         this.getUpgrades().add(new Upgrade("stadiumLights", 0, 0));
