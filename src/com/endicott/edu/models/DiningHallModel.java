@@ -8,6 +8,7 @@ public class DiningHallModel extends BuildingModel {
         this.getUpgrades().add(new Upgrade("Food Variety", 10000, 50));
         this.getUpgrades().add(new Upgrade("Cutleries", 3200, 50));
         this.getUpgrades().add(new Upgrade("Staff", 5000, 50));
+//        this.getUpgrades().add(new Upgrade("libraryDesks", 0, 0, "Upgraded the desks in classrooms!", UpgradeEvent.getTableEvents(), 2, true));
     }
 
     public void upgradeDiningHallModel(Upgrade upgrade) {
