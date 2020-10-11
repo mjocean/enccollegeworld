@@ -5,7 +5,7 @@ public class AdministrativeBldgModel extends BuildingModel{
     public AdministrativeBldgModel(String name){
         super(name, BuildingType.admin().getType());
 //        this.getUpgrades().add(new Upgrade("Tables", 0, 0, "Upgraded the Tables in admin offices!", UpgradeEvent.getTableEvents(), 2, true));
-        this.getUpgrades().add(new Upgrade("Bursars", 205, 0));
+//        this.getUpgrades().add(new Upgrade("Bursars", 205, 0));
 //        this.getUpgrades().add(new Upgrade("Cubicles", 320, 0, "Upgraded the office cubicles in the admin", UpgradeEvent.getCubicleEvents(), 3, true));
 //        this.getUpgrades().add(new Upgrade("MeetingHalls", 320, 0, "Upgraded the meeting rooms in the admin", UpgradeEvent.getMeetingRoomEvents(), 3, true));
     }
