@@ -7,6 +7,8 @@ public class EntertainmentCenterModel extends BuildingModel {
         this.getUpgrades().add(new Upgrade("Games",0, 0));
         this.getUpgrades().add(new Upgrade("Sofas", 0, 0));
         this.getUpgrades().add(new Upgrade("movieInventory", 0, 0));
+//        this.getUpgrades().add(new Upgrade("Games",1000, 0, "Got new games!", UpgradeEvent.getGameUpgradeEvents(), 2, true));
+//        this.getUpgrades().add(new Upgrade("MovieInventory", 10000, 0, "Added new movies to the movie inventory", UpgradeEvent.getMovieUpgradeEvents(), 1, true));
     }
 
     public void upgradeEntertainmentCenter(Upgrade upgrade) {

@@ -7,6 +7,8 @@ public class DormModel extends BuildingModel {
         this.getUpgrades().add(new Upgrade("Air Conditioning", 10000, 50));
         this.getUpgrades().add(new Upgrade("Plumbing", 3200, 50));
         this.getUpgrades().add(new Upgrade("CommonRooms", 5000, 50));
+//        this.getUpgrades().add(new Upgrade("Air Conditioning", 10000, 0, "Improved Air Conditioning quality in the dorm!", UpgradeEvent.getAirConditioningEvents(), 2, true));
+//        this.getUpgrades().add(new Upgrade("CommonRooms", 5000, 50, "Improved Common Room quality in the dorm!", UpgradeEvent.getCommonRoomEvents(), 2, true));
     }
 
     public void upgradeDormModel(Upgrade upgrade) {

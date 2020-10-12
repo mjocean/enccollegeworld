@@ -6,8 +6,9 @@ public class FootballStadiumModel extends BuildingModel{
     public FootballStadiumModel(String name, String size) {
         super(name, BuildingType.footballStadium().getType(), size);
         this.getUpgrades().add(new Upgrade("fbGrass",0, 0));
+//        this.getUpgrades().add(new Upgrade("fbGrass", 0, 0, "Upgraded the turf of the field!", UpgradeEvent.getTurfUpgrades(), 2, false));
         this.getUpgrades().add(new Upgrade("fbSeat", 0, 0));
-        this.getUpgrades().add(new Upgrade("fbLighting", 0, 0));
+//        this.getUpgrades().add(new Upgrade("fbLighting", 0, 0, "Upgraded the intensity of the field lights", UpgradeEvent.getLightingEvents(), 2, true));
         this.getUpgrades().add(new Upgrade("fbLine", 0, 0));
     }
 

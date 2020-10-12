@@ -6,6 +6,7 @@ public class HockeyRinkModel extends BuildingModel{
         super(name, BuildingType.hockeyRink().getType(), size);
         this.getUpgrades().add(new Upgrade("hrSeat", 0, 0));
         this.getUpgrades().add(new Upgrade("hrLighting", 0, 0));
+//        this.getUpgrades().add(new Upgrade("hrLighting", 0, 0, "Upgraded the intensity of the field lights", UpgradeEvent.getLightingEvents(), 2, true));
         this.getUpgrades().add(new Upgrade("hrIce", 0, 0));
         this.getUpgrades().add(new Upgrade("hrBarrier", 0, 0));
     }
