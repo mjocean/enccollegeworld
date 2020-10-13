@@ -1,6 +1,7 @@
 package com.endicott.edu.models;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by CJ Mustone and Joseph Moss 10/01/18
@@ -22,16 +23,8 @@ public class PopupEventModel implements Serializable {
     private int type;
     private String runId;
     private int eventId;
+    private ArrayList<Upgrade> upgradeNames;
 
-
-    /**
-     *
-     *
-     * @param title: The title of the event, i.e., "Flood destroys dorm", "Football team won the championship!"
-     * @param description: The description for the event.
-     * @param leftButtonText: Text for the "Handle Correctly" button.
-     * @param rightButtonText: Text for the "Handle Poorly" button.
-     */
     public PopupEventModel(String title, String description, String leftButtonText, String leftButtonCallback, String rightButtonText, String rightButtonCallback, String imagePath, String altImageText){
         this.title = title;
         this.description = description;
@@ -44,7 +37,6 @@ public class PopupEventModel implements Serializable {
         this.altImageText = altImageText;
         //Two Buttons
         this.type = 2;
-
     }
 
     //For use when a single callback with a server response is required
@@ -59,6 +51,16 @@ public class PopupEventModel implements Serializable {
         this.type = 1;
     }
 
+    //Created a new popup event model that takes in an ArrayList of Upgrades. Used by upgrade college in the Buildings page.
+    public PopupEventModel(String title, String description, String leftButtonText, String leftButtonCallback, ArrayList<Upgrade> UpgradeNames, String imagePath, String altImageText){
+        this.title = title;
+        this.description = description;
+        this.leftButtonText = leftButtonText;
+        this.leftButtonCallback = leftButtonCallback;
+        this.upgradeNames = UpgradeNames;
+        this.imagePath = imagePath;
+        this.altImageText = altImageText;
+    }
 
 
 
